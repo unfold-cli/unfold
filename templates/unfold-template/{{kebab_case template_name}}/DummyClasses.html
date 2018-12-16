@@ -1,0 +1,22 @@
+Global Variables:
+template_name = the name entered on "unfold new template-name name"
+__absolutePath__ = the absolute path to where the template is being created
+
+Basic variable usage:
+\{{example_variable}}
+
+Built in helpers for formatting text:
+studly_case: \{{studly_case template_name}} = {{studly_case template_name}}
+title_case: \{{title_case template_name}} = {{title_case template_name}}
+snake_case: \{{snake_case template_name}} = {{snake_case template_name}}
+camel_case: \{{camel_case template_name}} = {{camel_case template_name}}
+kebab_case: \{{kebab_case template_name}} = {{kebab_case template_name}}
+pluralize: \{{pluralize template_name}} = {{pluralize template_name}}
+
+You can also search and replace text (see "replace" section in unfold.js):
+This makes it much easier to make clean templates without crazy \{{ variables }} all over the place.
+DummyClass <-- this was replaced!
+DummyClasses <-- this was replaced!
+
+Combo!
+\{{pluralize (studly_case template_name)}} = {{pluralize (studly_case template_name)}}

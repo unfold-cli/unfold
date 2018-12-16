@@ -1,0 +1,24 @@
+{
+  "name": "unfold",
+  "version": "1.0.0",
+  "description": "Universal scaffolding tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Gile",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "inquirer-recursive": "0.0.5",
+    "lodash": "^4.17.11",
+    "plural": "^1.1.0",
+    "walk": "^2.3.14",
+    "walk-sync": "^0.3.3"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
