@@ -11,12 +11,13 @@
   "dependencies": {
     "commander": "^2.19.0",
     "handlebars": "^4.0.12",
-    "inquirer": "^6.2.0",
+    "inquirer": "^6.2.1",
     "inquirer-recursive": "0.0.5",
     "lodash": "^4.17.11",
+    "merge": ">=1.2.1",
     "plural": "^1.1.0",
     "walk": "^2.3.14",
-    "walk-sync": "^0.3.3"
+    "walk-sync": "^0.3.4"
   },
   "devDependencies": {
     "jest": "^23.6.0"
