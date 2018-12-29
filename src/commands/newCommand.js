@@ -8,7 +8,6 @@ const writeTemplate = require("../functions/templates/writeTemplate");
 const writeOutput = require("../functions/templates/writeOutput");
 const registerHelpers = require("../functions/templates/registerHelpers");
 const getReplacements = require("../functions/templates/getReplacements");
-
 require("../functions/helpers/index")();
 
 module.exports = function (template, buildPath) {

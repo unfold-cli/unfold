@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const program = require('commander');
 const pkg = require('./package.json');
 
@@ -34,10 +33,15 @@ program
 | Templates
 |--------------------------------------------------------------------------
 */
-// program
-//   .command('new <template> [path]')
-//   .action(function (template, path) {
-//   });
+const installCommand = require("./src/commands/templateInstallCommand");
+program
+  .command('template:install <template>')
+  .action(installCommand);
+
+const listCommand = require("./src/commands/templateListCommand");
+program
+  .command('template:list')
+  .action(listCommand);
 
 
 // program
