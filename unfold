@@ -44,6 +44,30 @@ program
   .action(listCommand);
 
 
+const templateUpdateCommand = require("./src/commands/templateUpdateCommand");
+program
+  .command('template:update')
+  .action(templateUpdateCommand);
+
+/*
+|--------------------------------------------------------------------------
+| Variables
+|--------------------------------------------------------------------------
+*/
+const variableSaveCommand = require("./src/commands/variableSaveCommand");
+program
+  .command('variable:set <variable> <value>')
+  .action(variableSaveCommand);
+
+const variableUnsetCommand = require("./src/commands/variableUnsetCommand");
+program
+  .command('variable:unset <variable>')
+  .action(variableUnsetCommand);
+
+const variableListCommand = require("./src/commands/variableListCommand");
+program
+  .command('variable:list')
+  .action(variableListCommand);
 // program
 //   .command('exec <cmd>')
 //   .alias('ex')

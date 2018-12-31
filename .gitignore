@@ -1,5 +1,5 @@
-/sandbox/
-.idea/
-node_modules/
 .DS_Store
 *.log
+sandbox/
+.idea/
+node_modules/

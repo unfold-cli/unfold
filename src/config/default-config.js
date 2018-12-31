@@ -6,5 +6,5 @@
 
 module.exports = {
   templates: [],
-  variables: {}
+  variables: {},
 };
