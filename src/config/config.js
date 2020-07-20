@@ -9,13 +9,17 @@ const configPath = path.join(homeDir, '.unfold', 'config.json');
 
 if (!fs.existsSync(path.dirname(configPath))) {
     fs.mkdirSync(path.dirname(configPath), { recursive: true }, err => {
-        if (err) throw err;
+        if (err) {
+            throw err;
+        }
     });
 }
 
 if (!fs.existsSync(configPath)) {
     fs.writeFileSync(configPath, JSON.stringify(defaultConfig, null, 4), err => {
-        if (err) throw err;
+        if (err) {
+            throw err;
+        }
     });
 }
 

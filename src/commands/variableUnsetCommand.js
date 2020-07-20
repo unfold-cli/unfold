@@ -10,7 +10,9 @@ module.exports = function (variable) {
     unset(config.variables, variable);
 
     fs.writeFileSync(configPath, JSON.stringify(config, null, 4), err => {
-        if (err) throw err;
+        if (err) {
+            throw err;
+        }
     });
 
     console.log(`"${variable}" value unset.`);

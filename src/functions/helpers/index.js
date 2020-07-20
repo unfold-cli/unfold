@@ -3,6 +3,8 @@ const stringHelpers = require('./strings');
 
 module.exports = function () {
     for (var k in stringHelpers) {
-        Handlebars.registerHelper(k, stringHelpers[k]);
+        if (stringHelpers.hasOwnProperty(k)) {
+            Handlebars.registerHelper(k, stringHelpers[k]);
+        }
     }
 };

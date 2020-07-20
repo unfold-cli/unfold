@@ -16,7 +16,6 @@ module.exports = function (template, buildPath, context) {
 
         if (extension === '.json') {
             appendJson(content, context, filePath);
-        } else if (extension === '.yaml' || extension === '.yml') {
         } else {
             appendGeneral(content, context, filePath);
         }

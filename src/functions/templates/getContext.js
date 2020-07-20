@@ -18,7 +18,7 @@ function variablesToPrompts(templateVars, context) {
 }
 
 module.exports = function (template, buildPath) {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
         // Get template variables.
         let context = _.merge(_.get(config, 'variables', {}), {
             __absolutePath__: buildPath,

@@ -11,7 +11,7 @@ module.exports = function () {
         fs.mkdirSync(configFolder);
     }
 
-    exec(`open ${configPath}`, function (err, stdout, stderr) {
+    exec(`open ${configPath}`, function (err) {
         if (err) {
             throw err;
         }
