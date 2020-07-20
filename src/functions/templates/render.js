@@ -1,13 +1,13 @@
-const Handlebars = require("handlebars");
+const Handlebars = require('handlebars');
 
 module.exports = function (string, context, replacements = []) {
-  let resolved = Handlebars.compile(string)(context);
+    let resolved = Handlebars.compile(string)(context);
 
-  if (replacements.length) {
-    replacements.forEach(replacement => {
-      resolved = resolved.replace(new RegExp(replacement.replace, 'g'), replacement.with);
-    });
-  }
+    if (replacements.length) {
+        replacements.forEach(replacement => {
+            resolved = resolved.replace(new RegExp(replacement.replace, 'g'), replacement.with);
+        });
+    }
 
-  return resolved;
+    return resolved;
 };

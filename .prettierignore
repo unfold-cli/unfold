@@ -1,0 +1,9 @@
+node_modules/
+/sandbox
+/templates
+.prettierignore
+.prettierrc
+.gitignore
+.gitkeep
+.idea/
+*.xml

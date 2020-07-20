@@ -5,6 +5,6 @@
  */
 
 module.exports = {
-  templates: [],
-  variables: {},
+    templates: [],
+    variables: {},
 };

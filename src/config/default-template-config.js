@@ -6,31 +6,31 @@
  */
 
 module.exports = {
-  // pre-defined variables
-  variables() {
-    return [];
-  },
+    // pre-defined variables
+    variables() {
+        return [];
+    },
 
-  // collects info to variables.  Loads variables
-  prompts() {
-    return [];
-  },
+    // collects info to variables.  Loads variables
+    prompts() {
+        return [];
+    },
 
-  // Handlebar helpers.
-  helpers() {
-    return {};
-  },
+    // Handlebar helpers.
+    helpers() {
+        return {};
+    },
 
-  // After files written.  Loads variables.
-  appends() {
-    return {};
-  },
+    // After files written.  Loads variables.
+    appends() {
+        return {};
+    },
 
-  // run these.  Loads variables.
-  scripts() {
-    return {
-      'before-unfold': [],
-      'after-unfold': []
-    };
-  }
+    // run these.  Loads variables.
+    scripts() {
+        return {
+            'before-unfold': [],
+            'after-unfold': [],
+        };
+    },
 };
