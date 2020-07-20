@@ -31,6 +31,9 @@ program.command('template:install <template>').action(installCommand);
 const listCommand = require('./src/commands/templateListCommand');
 program.command('template:list').action(listCommand);
 
+const linkCommand = require('./src/commands/templateLinkCommand');
+program.command('template:link <template>').action(linkCommand);
+
 const templateUpdateCommand = require('./src/commands/templateUpdateCommand');
 program.command('template:update').action(templateUpdateCommand);
 
