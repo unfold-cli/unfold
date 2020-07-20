@@ -4,7 +4,7 @@
   "description": "Universal scaffolding tool.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "John Gile",
   "license": "MIT",
@@ -19,6 +19,9 @@
     "walk-sync": "^2.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
     "jest": "^26.1.0",
     "prettier": "^2.0.5"
   }

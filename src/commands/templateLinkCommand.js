@@ -5,7 +5,8 @@ const homeDir = require('os').homedir();
 require('../functions/helpers/index')();
 
 module.exports = function (template) {
-    let unfoldFile = path.resolve(path.join(template, 'unfold.js'));
+    let linkPath = path.resolve(template);
+    let unfoldFile = path.resolve(path.join(linkPath, 'unfold.js'));
 
     if (fs.existsSync(unfoldFile)) {
         let loadedConfig = require(unfoldFile);
@@ -17,7 +18,7 @@ module.exports = function (template) {
         }
 
         let newTemplatePath = path.join(homeDir, '/.unfold/templates', templateName);
-        let linkTemplate = exec(`ln -s ${template} ${newTemplatePath}`);
+        let linkTemplate = exec(`ln -s ${linkPath} ${newTemplatePath}`);
 
         linkTemplate.on('close', code => {
             console.log(`Template "${templateName}" linked.  Use template with command: "unfold new ${templateName}"`);
