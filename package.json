@@ -13,7 +13,7 @@
     "handlebars": "^4.7.6",
     "inquirer": "^7.3.2",
     "inquirer-recursive": "0.0.6",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "merge": ">=1.2.1",
     "plural": "^1.1.0",
     "walk-sync": "^2.2.0"
